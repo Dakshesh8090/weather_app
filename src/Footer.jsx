@@ -1,22 +1,23 @@
-import React from "react";
+import { useTheme } from "@mui/material/styles";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const theme = useTheme();
+
+  const footerStyle = {
+    textAlign: "center",
+    padding: "12px",
+    backgroundColor: theme.palette.mode === "dark" ? theme.palette.background.paper : theme.palette.background.paper,
+    color: theme.palette.text.primary,
+    position: "fixed",
+    bottom: 0,
+    width: "100%",
+    borderTop: `1px solid ${theme.palette.divider}`,
+    transition: "all 0.3s ease",
+  };
 
   return (
-    <footer style={{
-      textAlign: "center",
-      padding: "15px",
-      backgroundColor: "#f5f5f5",
-      position: "fixed",
-      bottom: 0,
-      left: 0,
-      width: "100%",
-      fontSize: "14px",
-      color: "#555",
-      borderTop: "1px solid #ddd"
-    }}>
-      © {currentYear} Weather App by Dushyant. All rights reserved.
+    <footer style={footerStyle}>
+      © 2025 Weather App by Dushyant. All rights reserved.
     </footer>
   );
 }
