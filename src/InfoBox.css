@@ -1,0 +1,8 @@
+.InfoBox {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center (optional) */
+  flex-direction: column;    /* text aur card ek line me center ho */
+  text-align: center;
+  margin-top: 40px;
+}
