@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer style={footerStyle}>
-      © 2025 Weather App by Dushyant. All rights reserved.
+      © 2025 Weather App by Dakshesh. All rights reserved.
     </footer>
   );
 }

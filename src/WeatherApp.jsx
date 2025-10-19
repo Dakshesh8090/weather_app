@@ -1,10 +1,10 @@
 import SearchBox from "./SearchBox.jsx"
 import InfoBox from "./InfoBox.jsx"
 import { useState } from "react"
-import Footer from "./Footer.jsx"
+
 
 export default function WeatherApp () {
-    const CPY_URL = "https://www.transparentpng.com/thumb/copyright-symbol/WdjyD0-copyright-symbol-images-png"
+   
 
     const[weatherInfo , setWeatherInfo] = useState({
         city:  "Delhi",
@@ -25,7 +25,6 @@ export default function WeatherApp () {
             <h1>Weather App</h1>
             <SearchBox updateInfo={updateInfo}/>
             <InfoBox info={weatherInfo}/>
-            <Footer/>
         </div>
     )
 }
